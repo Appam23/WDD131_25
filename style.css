@@ -30,8 +30,9 @@ footer img{
 .content{
   max-width: 600px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 3.5em;
   line-height: 1.6;
+  border: 1px solid #5e5050;
 }
 body.dark h2{
   color: #006EB6;
@@ -40,4 +41,7 @@ body.dark{
   background-color: #333;
   color: #f4f4f4;
 
+}
+body.dark .content{
+  border: 1px solid #f4f4f4;
 }

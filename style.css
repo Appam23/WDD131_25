@@ -6,6 +6,7 @@ body {
 }
 hr{
   margin: 2px;
+  margin-bottom: 3em;
 }
 
 .title h1, h2{
@@ -42,6 +43,10 @@ body.dark{
   color: #f4f4f4;
 
 }
+
 body.dark .content{
   border: 1px solid #f4f4f4;
+}
+ol li{
+  margin-bottom: 1em;
 }

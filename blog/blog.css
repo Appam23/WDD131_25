@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap');
+
+/* Color palette */
+:root {
+  --gold: #EFC69B;
+  --red: #AF1B3F;
+  --dark: #473144;
+}
+
+/* General styles */
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  color: var(--dark);
+  background-color: #fafafa;
+  margin: 0;
+  padding: 0;
+}
+
+/* Skip to content link (accessibility) */
+.skiptocontent a {
+  position: absolute;
+  left: 0;
+  top: -40px;
+  background: var(--gold, #EFC69B);
+  color: var(--dark, #473144);
+  padding: 8px 16px;
+  font-weight: bold;
+  z-index: 100;
+  border-radius: 0 0 5px 5px;
+  text-decoration: none;
+  transition: top 0.2s;
+}
+.skiptocontent a:focus {
+  top: 0;
+  outline: 2px solid var(--red, #AF1B3F);
+}
+
+/* Header Title Styling */
+header h1 {
+  font-family: 'Lora', Impact, serif;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 2rem 0 1.5rem 0;
+  color: var(--dark);
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+/* Navigation Container Styling */
+nav {
+  border-top: 2px solid var(--dark);
+  border-bottom: 2px solid var(--dark);
+  margin: 0 auto 2rem auto;
+  padding: 0;
+  background: transparent;
+}
+
+/* Navigation Grid Styling */
+nav ul {
+  display: grid;
+  grid-template-columns: 90px 90px 90px;
+  justify-content: end;
+  justify-items: end;
+  gap: 2em;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 350px;
+  min-height: 3.5rem;
+  align-items: center;
+}
+
+/* Navigation Link Styling */
+nav a {
+  font-size: 1.3rem;
+  font-family: 'Lora', Impact, serif;
+  color: var(--red);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5em 0.25em;
+  line-height: 1.2;
+  transition: color 0.2s;
+  border-radius: 2px;
+}
+
+nav a:hover,
+nav a:focus {
+  color: var(--dark);
+  background: var(--gold);
+}
+
+/* Remove bullets and spacing from navigation list items */
+nav ul li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Restrict main width and center for alignment with navbar */
+main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2em;
+  margin: 2em auto;
+  max-width: 850px;
+}
+
+.blog-posts article {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1.5em;
+  align-items: stretch; /* <-- key addition */
+  margin-bottom: 2.5em;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+  border-right: 2px solid var(--gold, #EFC69B);
+  padding-right: 1.5em;
+  padding-left: 0.5em;
+}
+
+.details time {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.details ul {
+  text-align: right;
+  padding-right: 0.5em;
+  margin: 0;
+}
+
+.details ul li {
+  margin-bottom: 0.2em;
+  line-height: 1.1;
+  list-style: none;
+}
+
+/* Content section styling */
+.content h2 {
+  font-family: 'Lora', Impact, serif;
+  color: var(--red);
+  font-size: 1.4rem;
+  margin-top: 0.2em; /* Align with date */
+}
+
+/* Article Figure */
+figure {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+figure img {
+  display: block;
+  max-width: 220px;
+  margin: 0 auto;
+  border: 2px solid var(--gold);
+  border-radius: 6px;
+}
+
+figcaption {
+  font-size: 0.95em;
+  color: var(--dark);
+  margin-top: 0.5em;
+}
+
+/* Aside (filter box) */
+aside {
+  background: #fff;
+  border: 1px solid var(--gold);
+  padding: 1em;
+  border-radius: 8px;
+}
+
+.filter-box label {
+  display: block;
+  margin-top: 1em;
+  font-weight: 600;
+}
+
+.filter-box select {
+  width: 100%;
+  padding: 0.4em;
+  border: 1px solid var(--gold);
+  border-radius: 4px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1em;
+  background: #eaeaea;
+  margin-top: 3em;
+  font-size: 0.9em;
+}
+
+/* Responsive adjustments */
+@media (max-width: 800px) {
+  main {
+    grid-template-columns: 1fr;
+    gap: 1em;
+    max-width: 100%;
+  }
+  aside {
+    margin-top: 2em;
+  }
+  nav ul {
+    grid-template-columns: 1fr;
+    gap: 1em;
+    max-width: 100%;
+    min-height: 2.5rem;
+  }
+  header h1 {
+    font-size: 2rem;
+    padding: 1rem 0 0.5rem 0;
+  }
+}
+.read-more {
+  color: var(--red, #AF1B3F);
+  font-weight: bold;
+  margin-left: 0.5em;
+  cursor: pointer;
+}

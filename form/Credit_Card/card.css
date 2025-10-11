@@ -88,7 +88,8 @@ button{
 }
 
 /* Expiration: Label above inputs */
-#front label[for="expirationDate"] {
+/* Replace the old selector with this new one */
+#front label.expiration-label {
     grid-column: 2/4;
     grid-row: 3/4;
     margin-bottom: 5px;

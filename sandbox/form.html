@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Checkout</title>
+  <link rel="stylesheet" href="form.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Checkout</h1>
+    <form id="checkoutForm">
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname">
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email">
+
+      <label for="address">Address:</label>
+      <textarea id="address" name="address"></textarea>
+
+      <label for="payment">Payment Method:</label>
+      <select id="payment" name="payment">
+        <option>Select Payment Method</option>
+        <option>Credit Card</option>
+        <option>PayPal</option>
+      </select>
+
+      <label for="ccnumber">Credit Card Number:</label>
+      <input type="text" id="ccnumber" name="ccnumber" placeholder="Enter 16 digits">
+
+      <label for="paypal">PayPal Username:</label>
+      <input type="text" id="paypal" name="paypal" placeholder="Enter PayPal username">
+
+      <button type="submit" id="orderBtn">Place Order</button>
+    </form>
+  </div>
+  <script src="form.js"></script>
+</body>
+</html>

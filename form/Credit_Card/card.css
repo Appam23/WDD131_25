@@ -45,6 +45,7 @@ form{
 button{
     grid-column: 3/4;
     grid-row: 4/5;
+    border-radius: 5px;
 }
 
 /* Position elements with labels above inputs - fitting in 3 rows */
@@ -98,7 +99,7 @@ button{
 #front input[name="month"] {
     grid-column: 2/3;
     grid-row: 3/4;
-    width: 80%;        /* Changed from 100% to 70% */
+    width: 90%;        /* Changed from 100% to 70% */
     margin-top: 20px;
 }
 

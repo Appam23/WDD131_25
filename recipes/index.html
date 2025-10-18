@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Appam Leisan">
+    <!-- Favicon link (add this line) -->
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+    <!-- Primary Meta Tags -->
+    <title>My Recipe Collection - Delicious Recipes for Every Occasion</title>
+    <meta name="description" content="Discover amazing recipes including classic chocolate chip cookies and more. Find your perfect recipe with detailed instructions, ratings, and cooking times.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="My Recipe Collection - Delicious Recipes for Every Occasion">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Discover amazing recipes including classic chocolate chip cookies and more. Find your perfect recipe with detailed instructions, ratings, and cooking times.">
+    <meta property="og:image" content="https://yourwebsite.com/images/chocolate-chip-cookies.jpg">
+    <meta property="og:url" content="https://yourwebsite.com/recipes/">
+    <meta property="og:site_name" content="My Recipe Collection">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="My Recipe Collection - Delicious Recipes for Every Occasion">
+    <meta name="twitter:description" content="Discover amazing recipes including classic chocolate chip cookies and more. Find your perfect recipe with detailed instructions, ratings, and cooking times.">
+    <meta name="twitter:image" content="https://yourwebsite.com/images/chocolate-chip-cookies.jpg">
+
+    <link rel="stylesheet" href="recipes.css">
+    <script src="recipes.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/recipe-book.png" alt="Recipe Collection Logo" class="logo">
+            <h1 class="site-name">My Recipe Collection</h1>
+        </div>
+    </header>
+
+    <main>
+        <!-- Search Form Section -->
+        <section class="search-section">
+            <h2>Find Your Perfect Recipe</h2>
+            <form class="search-form" role="search">
+                <label for="recipe-search" class="sr-only">Search recipes</label>
+                <input 
+                    type="search" 
+                    id="recipe-search" 
+                    name="search" 
+                    placeholder="Search recipes..." 
+                    aria-label="Search recipes">
+                <button type="submit" aria-label="Submit search">
+                    <span>🔍</span>
+                </button>
+            </form>
+        </section>
+
+        <!-- Recipe Section -->
+        <section id="recipes">
+            <h2>Featured Recipes</h2>
+            
+            <article class="recipe-card">
+                <img src="images/chocolate-chip-cookies.jpg" alt="Chocolate Chip Cookies" class="recipe-image">
+                
+                <div class="recipe-content">
+                    <h3 class="recipe-title">Classic Chocolate Chip Cookies</h3>
+                    
+                    <div class="recipe-meta">
+                        <span class="prep-time"><strong>Prep:</strong> 15 min</span>
+                        <span class="cook-time"><strong>Cook:</strong> 12 min</span>
+                        <span class="total-time"><strong>Total:</strong> 27 min</span>
+                    </div>
+                    
+                    <!-- Accessible Star Rating -->
+                    <div class="rating" role="img" aria-label="Recipe rating: 4.5 out of 5 stars">
+                        <span class="stars" aria-hidden="true">
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star half">☆</span>
+                        </span>
+                        <span class="rating-text">4.5/5 (127 reviews)</span>
+                    </div>
+                    
+                    <p class="recipe-description">
+                        The perfect balance of crispy edges and chewy centers. These classic chocolate chip cookies are a family favorite that never goes out of style.
+                    </p>
+                    
+                    <div class="recipe-tags">
+                        <span class="tag">Dessert</span>
+                        <span class="tag">Cookies</span>
+                        <span class="tag">Family-Friendly</span>
+                    </div>
+                    
+                    <a href="#recipe-details" class="recipe-link">View Full Recipe</a>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-row">
+            <!-- Flaticon link on the left -->
+            <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons" class="footer-flaticon">
+                Recipe icons created by Freepik - Flaticon
+            </a>
+            <!-- Social icons on the right -->
+            <div class="social">
+                <a href="#"><img src="images/instagram_icon.svg" alt="instagram icon"></a>
+                <a href="#"><img src="images/youtube_icon.svg" alt="youtube icon"></a>
+                <a href="#"><img src="images/pinterest_icon.svg" alt="pinterest icon"></a>
+            </div>
+        </div>
+        <p>&copy; 2025 Appam Leisan. All rights reserved.</p>
+    </footer>
+</body>
+</html>

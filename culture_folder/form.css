@@ -66,7 +66,7 @@ select {
   height: 10px; /* Consistent height for all fields */
 }
 select{
-  height: 45px;
+  height: 55px;
 }
 
 textarea {

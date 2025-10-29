@@ -63,7 +63,10 @@ select {
   font-size: 1em;
   font-family: var(--paragraph-font);
   transition: border-color 0.2s;
-  height: 15px; /* Consistent height for all fields */
+  height: 10px; /* Consistent height for all fields */
+}
+select{
+  height: 45px;
 }
 
 textarea {

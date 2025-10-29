@@ -1,4 +1,3 @@
-
 // Sidenav open/close functions (used in index.html and page1.html)
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";

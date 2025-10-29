@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const welcomeMsg = document.createElement('p');
     welcomeMsg.textContent = "Welcome to a celebration of North-East Naga culture!";
     welcomeMsg.style.fontWeight = "bold";
-    welcomeMsg.style.color = "#e7c24f";
+    welcomeMsg.style.color = "#E7C24F";
     header.appendChild(welcomeMsg);
 });
 
@@ -21,6 +21,6 @@ document.addEventListener("DOMContentLoaded", function() {
         message.textContent = "Good evening! Welcome to a celebration of North-East Naga culture!";
     }
     message.style.fontWeight = "bold";
-    message.style.color = "#e7c24f";
+    message.style.color = "#E7C24F";
     header.appendChild(message);
 });

@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Lato:400,700");
+
+:root {
+  /* change the values below to your colors from your palette */
+  --primary-color: #396E94;
+  --secondary-color: #E7C24F;
+  --accent1-color: #A43312;
+  --accent2-color: #eaedf3;
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: "Playfair Display", serif;
+  --paragraph-font: "Lato", sans-serif;
+
+  /* these colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: var(
+    --primary-color
+  ); /* headlines on a white background */
+  --headline-color-on-color: #eaedf3 /* headlines on a colored background */
+  --paragraph-color-on-white: var(
+    --primary-color
+  ); /* paragraph text on a white background */
+  --paragraph-color-on-color: #eaedf3 /* paragraph text on a colored background */
+  --paragraph-color: var(--primary-color); /* default paragraph color */
+  --paragraph-background-color: var(--primary-color);
+  --nav-link-color: var(--primary-color);
+  --nav-background-color: var(--secondary-color);
+  --nav-hover-link-color:   #eaedf3;
+  --nav-hover-background-color: var(--primary-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--headline-color-on-white);
+  }
+  h2 {
+    text-align: center;
+  }
+  .item-1 p{
+    color: #A43312;
+  }
+
+  /* Center the alert button */
+  #alertBtn {
+    display: block;
+    margin: 30px auto;
+    padding: 12px 32px;
+    font-size: 1.1rem;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 8px #396E94;
+    transition: background 0.2s;
+  }
+  #alertBtn:hover {
+    background-color: var(--primary-color);
+    color:  #eaedf3;
+  }
+
+  header{
+    display: grid;
+    grid-template-columns: 70px auto;
+    background-color: #E7C24F;  
+    border-radius: 10px;  
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+nav a{
+    text-align: center;
+    background-color: transparent;
+    color: #396E94;
+    text-decoration: none ;
+    padding: 20px;
+    display: block;
+}
+nav a:hover{
+    background-color: transparent;
+    color: #eaedf3;
+}
+.logo{
+    width: 150px;
+    border-radius: 50%;
+    
+}
+p{
+    color: #396E94;
+}
+
+.pictures2 {
+   
+    width: 95%;
+    margin: 50px auto;
+    color: #A43312;
+    text-align: center;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-rows: 170px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+}
+.item-1 { 
+    background-color:  transparent;
+    border-radius: 10px;
+    grid-column: 1/4;
+}
+h1{
+    text-align: center;
+}
+h1:hover{
+    color: #A43312;
+} 
+.pic1,
+.pic2,
+.pic3 {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 1px solid#A43312;
+    display: block;
+    margin: 0 auto;
+
+}   
+
+
+
+    .video {
+        width: 460%;
+        height: 215%; 
+        grid-column: 1/5;
+        position: relative;
+        height: 0;
+        width: 100%;
+        padding-bottom: 26.25%;
+        overflow: hidden;
+        
+    }
+    .video iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 99%;
+        height: 80%;
+        border-radius: 40px;
+        border: 1px solid #A43312;
+
+    }
+    #alertBtn{
+      text-align: center;
+    }
+    .sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 9999; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color:  #eaedf3; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #396E94;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #396E94;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  .welcome-menu {
+  font-family: 'Playfair Display', serif; /* or any font you like */
+  color: #396E94; /* or any color you want */
+  font-weight: bold; /* optional */
+}
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+/* Style for Tour Preference Dropdown */
+#tourPreference {
+  width: 100%;
+  padding: 10px 12px;
+  margin: 10px 0 20px 0;
+  border: 1.5px solid var(--primary-color);
+  border-radius: 6px;
+  background: #eaedf3 ;
+    font-size: 1rem;
+  color: var(--primary-color);
+  font-family: var(--paragraph-font);
+  transition: border-color 0.2s;
+}
+#tourPreference:focus {
+  border-color: var(--secondary-color);
+  outline: none;
+}
+
+label[for="tourPreference"] {
+  display: block;
+  margin: auto;
+  margin-top: 16px;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #396E94;
+  font-family: var(--heading-font);
+}
+* {box-sizing: border-box}
+body {font-family: Lato, sans-serif; margin:0}
+
+    footer{
+        background-color: #396E94;
+        color:  #eaedf3;
+        text-decoration: none;
+        font-size: 18px;
+        padding: 15px 30px;
+        margin-top: 0px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 10px;
+    }
+    footer p{
+    
+        color:  #eaedf3;
+        text-decoration: underline;
+        font-size: .9em;
+        font-family: "Lato", sans-serif;
+    }
+    footer p:hover{
+        background-color: transparent;
+    color: #A43312;
+      
+    }
+

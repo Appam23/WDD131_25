@@ -319,21 +319,23 @@ function ratingTemplate(rating) {
 
 // 4. Template function to generate the HTML for displaying a recipe
 function recipeTemplate(recipe) {
-    return `<figure class="recipe">
-        <img src="${recipe.image}" alt="image of ${recipe.name}" />
-        <figcaption>
-            <ul class="recipe__tags">
-                ${tagsTemplate(recipe.tags)}
-            </ul>
-            <h2><a href="#">${recipe.name}</a></h2>
-            <p class="recipe__ratings">
-                ${ratingTemplate(recipe.rating)}
-            </p>
-            <p class="recipe__description">
-                ${recipe.description}
-            </p>
-        </figcaption>
-    </figure>`;
+    return `
+        <article class="recipe-card">
+            <img src="${recipe.image}" alt="image of ${recipe.name}" class="recipe-image" />
+            <div class="recipe-content">
+                <ul class="recipe__tags">
+                    ${tagsTemplate(recipe.tags)}
+                </ul>
+                <h2><a href="#">${recipe.name}</a></h2>
+                <p class="recipe__ratings">
+                    ${ratingTemplate(recipe.rating)}
+                </p>
+                <p class="recipe__description">
+                    ${recipe.description}
+                </p>
+            </div>
+        </article>
+    `;
 }
 
 function renderRecipes(recipeList) {

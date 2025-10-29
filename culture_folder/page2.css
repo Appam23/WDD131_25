@@ -1,100 +1,92 @@
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Lato:400,700");
 
 :root {
-  /* change the values below to your colors from your palette */
-  --primary-color: #396E94;
+  --primary-color: #180942;
   --secondary-color: #E7C24F;
   --accent1-color: #A43312;
-  --accent2-color: #eaedf3;
+  --accent2-color: #EAEDF3;
 
-  /* change the values below to your chosen font(s) */
   --heading-font: "Playfair Display", serif;
   --paragraph-font: "Lato", sans-serif;
 
-  /* these colors below should be chosen from among your palette colors above */
-  --headline-color-on-white: var(--primary-color);  /* headlines on a white background */ 
-  --headline-color-on-color:  #eaedf3; /* headlines on a colored background */ 
-  --paragraph-color-on-white: var(--primary-color); /* paragraph text on a white background */ 
-  --paragraph-color-on-color: #eaedf3; /* paragraph text on a colored background */ 
+  --headline-color-on-white: var(--primary-color);
+  --headline-color-on-color: var(--accent2-color);
+  --paragraph-color-on-white: var(--primary-color);
+  --paragraph-color-on-color: var(--accent2-color);
   --paragraph-color: var(--primary-color);
   --paragraph-background-color: var(--primary-color);
   --nav-link-color: var(--primary-color);
   --nav-background-color: var(--secondary-color);
-  --nav-hover-link-color: #eaedf3;
-  --nav-hover-background-color: var(--primary-color);
+  --nav-hover-link-color: var(--accent2-color);
+  --nav-hover-background-color: var(--accent1-color);
 }
-h1, h2, h3, h4, h5, h6 {
-    font-family: var(--heading-font);
-    color: #396E94;
-  }
-  h2 {
-    text-align: center;
-  }
-  p{
-    text-align: center;
-  }
 
-  header{
-    display: grid;
-    grid-template-columns: 70px auto;
-    background-color:  #E7C24F; 
-    border-radius: 10px;   
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  color: var(--headline-color-on-white);
+}
+h2 {
+  text-align: center;
+}
+p {
+  text-align: center;
+  color: var(--paragraph-color-on-white);
+}
+
+header {
+  display: grid;
+  grid-template-columns: 70px auto;
+  background-color: var(--nav-background-color);
+  border-radius: 10px;
 }
 nav {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
-nav a{
+nav a {
   text-align: center;
   background-color: transparent;
-  color:#396E94;
-  text-decoration: none ;
+  color: var(--nav-link-color);
+  text-decoration: none;
   padding: 20px;
   display: block;
-  font-family: "Lato", sans-serif;
+  font-family: var(--paragraph-font);
 }
-nav a:hover{
-    background-color: transparent;
-    color: #eaedf3;
+nav a:hover {
+  background-color: transparent;
+  color: var(--accent1-color);
+  outline: none; /* Remove box on hover */
 }
-.logo{
-    width: 150px;
-    
-    border-radius: 50%;
+nav a:focus, nav a:focus-visible {
+  outline: 2px solid var(--accent1-color);
+  outline-offset: 2px;
 }
-body{
-    padding: 30px;
+.logo {
+  width: 150px;
+  border-radius: 50%;
 }
 
+body {
+  padding: 30px;
+  background: var(--accent2-color);
+  font-family: var(--paragraph-font);
+}
 
 .mySlides {
   display: none;
 }
 img {vertical-align: middle;}
 
-/* Slideshow container */
 .slideshow-container {
-  
   max-width: 50%;
   position: relative;
   margin: auto;
 }
-.mySlides fade{
-  text-align: center;
+.Beans, .Umarok, .Chicken {
+  border-radius: 50%;
+  border: 1px solid var(--accent1-color);
 }
-.Beans{
-    border-radius: 50%;
-    border: 1px solid#A43312;
-}
-.Umarok{
-    border-radius: 50%;
-    border: 1px solid#A43312;
-}
-.Chicken{
-    border-radius: 50%;
-    border: 1px solid#A43312;
-    
-}
+
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
@@ -103,61 +95,38 @@ img {vertical-align: middle;}
   width: auto;
   padding: 16px;
   margin-top: -22px;
-  color: #A43312;
+  color: var(--accent1-color);
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
-
-/* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
-
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: #396E94;
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
 }
 
-.text {
-  background-color:  transparent;
-  color: #396E94;
+.text, .text1, .text2 {
+  background-color: transparent;
+  color: var(--primary-color);
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
-  bottom: -1cm;
   width: 100%;
   text-align: center;
-  border-radius: 60%;
+  border-radius: 50%;
 }
-.text1{
-    color:  #396E94;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: -1.5cm;
-    width: 100%;
-    text-align: center;
-    border-radius: 50%;
-   
-  }
-  .text2{
-      color:  #396E94;
-      font-size: 15px;
-      padding: 8px 12px;
-      position: absolute;
-      bottom: -1cm;
-      width: 100%;
-      text-align: center;
-      border-radius: 50%;
-     
-    }
-/* Number text (1/3 etc) */
+.text { bottom: -1cm; }
+.text1 { bottom: -1.5cm; }
+.text2 { bottom: -1cm; }
+
 .numbertext {
-  color: #A43312;
+  color: var(--accent1-color);
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
@@ -170,14 +139,13 @@ img {vertical-align: middle;}
   height: 15px;
   width: 15px;
   margin: 1cm 2px 0 2px;
-  background-color: #eaedf3;
+  background-color: var(--accent2-color);
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
-
 .active, .dot:hover {
-  background-color: #A43312;
+  background-color: var(--accent1-color);
 }
 
 /* Fading animation */
@@ -185,110 +153,116 @@ img {vertical-align: middle;}
   animation-name: fade;
   animation-duration: 1.5s;
 }
-
 @keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
 }
 
-/* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
+  .prev, .next, .text {font-size: 11px}
 }
 
 * {
-    box-sizing: border-box;
-  }
-  
-  /* Add padding to containers */
-  .container {
-    border-radius: 20px;
-    border: 3px solid #396E94;
-    padding: 10px;
-    background-color: #eaedf3;
-  }
-  h1{
-    color:#396E94;
-  }
-  p{
-    color: #396E94;
-  }
-  label{
-    color:#eaedf3;
-  }
-  
-  /* Full-width input fields */
-  input[type=text], input[type=password] {
-    width: 100%;
-    padding: 15px;
-    margin: 5px 0 22px 0;
-    display: inline-block;
-    border: 1px solid #396E94;
-    background: #eaedf3;
-  }
-  
-  input[type=text]:focus, input[type=password]:focus {
-    background-color: #eaedf3;
-    outline: none;
-  }
-  
-  /* Overwrite default styles of hr */
-  hr {
-    border: 1px solid #eaedf3;
-    margin-bottom: 25px;
-  }
-  
-  /* Set a style for the submit button */
-  .registerbtn {
-    background-color: #A43312;
-    color: #eaedf3;
-    padding: 16px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    opacity: 0.9;
-  }
-  
-  .registerbtn:hover {
-    opacity: 1;
-  }
-  
-  /* Add a blue text color to links */
-  a {
-    color: #A43312;
-  }
-  
-  /* Set a grey background color and center the text of the "sign in" section */
-  .signin {
-    background-color: #eaedf3;
-    text-align: center;
-  }
-  footer{
-    background-color: #396E94;
-    color: #eaedf3;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 15px 30px;
-    margin-top: 0px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border-radius: 10px;
+  box-sizing: border-box;
 }
-footer p{
-    background-color: #396E94;
-    color: #eaedf3;
-    text-decoration: underline;
-    font-size: .9em;
-    font-family: "Lato", sans-serif;
+
+/* Add padding to containers */
+.container {
+  border-radius: 20px;
+  border: 3px solid var(--primary-color);
+  padding: 10px;
+  background-color: var(--accent2-color);
 }
-footer p:hover{
-    background-color: transparent;
-    color: #A43312;
+h1 {
+  color: var(--primary-color);
+}
+p {
+  color: var(--primary-color);
+}
+label {
+  color: var(--primary-color);
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: 1px solid var(--primary-color);
+  background: var(--accent2-color);
+  color: var(--primary-color);
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: var(--accent2-color);
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid var(--accent2-color);
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: var(--accent1-color);
+  color: var(--accent2-color);
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
+}
+
+/* Add a dark accent color to links */
+a {
+  color: var(--accent1-color);
+}
+a:focus, a:hover {
+  color: var(--primary-color);
+  outline: 2px solid var(--accent1-color);
+  outline-offset: 2px;
+}
+
+/* Set a light background color and center the text of the "sign in" section */
+.signin {
+  background-color: var(--accent2-color);
+  text-align: center;
+}
+footer {
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
+  text-decoration: none;
+  font-size: 18px;
+  padding: 15px 30px;
+  margin-top: 0px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+}
+footer p {
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
+  text-decoration: underline;
+  font-size: .9em;
+  font-family: var(--paragraph-font);
+}
+footer p:hover {
+  background-color: transparent;
+  color: var(--accent1-color);
 }
 .container.signin {
-  width:100%;
+  width: 100%;
   margin: 10px auto 4px auto;
   padding: 10px;
   box-sizing: border-box;

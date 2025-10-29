@@ -65,6 +65,7 @@ select {
   transition: border-color 0.2s;
   height: 10px; /* Consistent height for all fields */
 }
+
 select{
   height: 55px;
 }

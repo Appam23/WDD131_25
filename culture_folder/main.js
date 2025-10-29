@@ -87,3 +87,22 @@ if (typeof showSlides === 'undefined') {
     }
   });
 }
+// ...existing code...
+
+// Registration form thank you message for page2.html
+document.addEventListener('DOMContentLoaded', function() {
+  const regForm = document.querySelector('form[action="/action_page.php"]');
+  if (regForm) {
+    regForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      regForm.innerHTML = `
+        <div style="text-align:center; padding:2em;">
+          <h2>Thank you for registering!</h2>
+          <p>Your account has been created.</p>
+        </div>
+      `;
+    });
+  }
+});
+
+// ...existing code...
